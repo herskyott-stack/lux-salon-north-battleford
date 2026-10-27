@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lux Salon — North Battleford, SK | Hair, Balayage, Piercing, Waxing</title>
+<meta name="description" content="Lux Salon, 1662 100 St, North Battleford SK: haircuts, colour, balayage, colour correction, full body piercing, waxing and sugaring. Call (306) 445-3550.">
+<style>
+:root{--acc:#8a6d1f;--acctx:#fff;--ink:#1c1a15;--bg:#fbf9f4}
+*{box-sizing:border-box}body{margin:0;font-family:Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+header{text-align:center;padding:3rem 1rem 1rem}
+h1{font-family:Didot,'Bodoni MT',Georgia,serif;font-size:3.4rem;font-weight:400;letter-spacing:.35em;margin:.2rem 0;text-transform:uppercase}
+.rule{width:120px;height:1px;background:#8a6d1f;margin:1.2rem auto}
+.wrap{max-width:820px;margin:0 auto;padding:0 1rem 2.4rem;text-align:center}
+.svc{display:grid;grid-template-columns:1fr 1fr;gap:.2rem 2.5rem;text-align:left;max-width:640px;margin:0 auto}@media(max-width:560px){.svc{grid-template-columns:1fr}}
+.svc p{border-bottom:1px solid #e4dcc8;padding:.45rem 0;margin:0}
+.cta{display:inline-block;border:1px solid #8a6d1f;color:#8a6d1f;padding:.8rem 2rem;text-decoration:none;letter-spacing:.15em;text-transform:uppercase;font-size:.85rem}
+.cform{margin:0 auto;text-align:left}
+.foot{text-align:center;padding:1.2rem;font-size:.85rem;opacity:.7}
+
+.cform{display:grid;gap:.7rem;max-width:520px}
+.cform label{display:grid;gap:.3rem;font-size:.92rem;font-weight:600}
+.cform input,.cform select,.cform textarea{padding:.6rem .7rem;border:1px solid #0003;border-radius:8px;font:inherit;background:#fff;color:#111}
+.cform button{padding:.75rem 1rem;border:0;border-radius:8px;font:inherit;font-weight:700;cursor:pointer;background:var(--acc);color:var(--acctx,#fff)}
+.fnote{font-size:.85rem;opacity:.8}
+.fdone{font-weight:700}
+a{color:var(--acc)}
+</style>
+</head>
+<body>
+
+<header>
+  <p style="letter-spacing:.3em;font-size:.85rem">NORTH BATTLEFORD · SASKATCHEWAN</p>
+  <h1>Lux Salon</h1>
+  <div class="rule"></div>
+  <p>Hair, piercing &amp; beauty — one quiet, elegant room on 100th Street.</p>
+  <p><a class="cta" href="tel:+13064453550">Call (306) 445-3550</a></p>
+  <p>Rated 4.8★ from 31 Google reviews</p>
+</header>
+<div class="wrap">
+  <h2 style="font-family:Georgia,serif;font-weight:400;letter-spacing:.1em">SERVICES</h2>
+  <div class="svc">
+    <p>Cut &amp; style — women &amp; men</p>
+    <p>Colour &amp; highlights</p>
+    <p>Balayage</p>
+    <p>Colour correction</p>
+    <p>Full body piercing</p>
+    <p>Waxing &amp; sugaring</p>
+    <p>Men's straight-razor shave</p>
+    <p>Permanent makeup</p>
+  </div>
+  <div class="rule"></div>
+  <p>Monday – Thursday 10 – 6 · Friday 10 – 5 · Saturday 10 – 4 · Sunday closed<br>
+  1662 100 St, North Battleford, SK S9A 0W6 · Message us on Facebook to book</p>
+  <h2 style="font-family:Georgia,serif;font-weight:400;letter-spacing:.1em">REQUEST AN APPOINTMENT</h2>
+  
+      <form class="cform" onsubmit="event.preventDefault();var r='LXS-'+Math.floor(1000+Math.random()*9000);document.getElementById('LXSref').textContent=r;document.getElementById('LXSdone').style.display='block';this.querySelector('button').disabled=true;">
+        <label>Your name<input type="text" required autocomplete="name"></label>
+        <label>Phone<input type="tel" required autocomplete="tel"></label>
+        <label>Service<select>
+          <option>Hair appointment</option>
+          <option>Colour / balayage consultation</option>
+          <option>Piercing appointment</option>
+          <option>Waxing / sugaring appointment</option>
+          <option>General question</option>
+        </select></label>
+        <label>Details (optional)<textarea rows="3"></textarea></label>
+        <button type="submit">Send request</button>
+        <p class="fnote">Concept preview form — it doesn't send or store anything yet. To reach us today, please call (306) 445-3550.</p>
+        <p class="fdone" id="LXSdone" style="display:none">Reference: <strong id="LXSref"></strong> — concept only; please call to confirm.</p>
+      </form>
+</div>
+<footer class="foot"><p>Concept website designed for Lux Salon · Built by Jake Hersky — Ottawa web designer · hersky.info</p></footer>
+
+</body>
+</html>
